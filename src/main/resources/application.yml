@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /movie/bff
+spring:
+  application:
+    name: bff
+  output:
+    ansi:
+      enabled: ALWAYS
+
+cnf:
+  rest-template:
+    connect-timeout: 4000
+    connection-request-timeout: 4000
+    response-timeout: 10000
+user:
+  url: http://localhost:8081/movie/user
+product:
+  url: http://localhost:8082/movie/product
